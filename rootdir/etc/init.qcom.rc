@@ -28,6 +28,12 @@
 import /vendor/etc/init/hw/init.qcom.usb.rc
 import /vendor/etc/init/hw/init.target.rc
 
+on boot
+
+    # Allow system to read measured screen FPS
+    chown system graphics /sys/class/drm/card0/sde-crtc-0/measured_fps
+    chmod 0660 /sys/class/drm/card0/sde-crtc-0/measured_fps
+
 on early-init
     mount debugfs debugfs /sys/kernel/debug
     chmod 0755 /sys/kernel/debug
