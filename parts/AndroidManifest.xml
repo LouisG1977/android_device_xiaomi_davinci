@@ -56,6 +56,11 @@
         </service>
 
         <service
+            android:name=".fpsinfo.FPSInfoService"
+            android:exported="false">
+        </service>
+
+        <service
             android:name=".display.DcDimmingService"
             android:permission="XiaomiDcDimmingService"></service>
 
