@@ -30,4 +30,7 @@
 
     <!-- Smart Charging -->
     <bool name="config_supportSmartCharging">true</bool>
+
+    <!-- FOD recognizing animation -->
+    <bool name="config_fodAnimationPackage">true</bool>
 </resources>
