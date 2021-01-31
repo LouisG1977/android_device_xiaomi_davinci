@@ -47,8 +47,8 @@
     <string name="popup_camera_calibrate_success">Calibrated successfully. You can open the front camera now.</string>
 
     <!-- Thermal Profiles -->
-    <string name="thermal_title">Thermal Profiles</string>
-    <string name="thermal_summary">Adjust per-app thermal profiles for optimum performance</string>
+    <string name="thermal_title">Thermal Profiles and Game Mode</string>
+    <string name="thermal_summary">Adjust per-app thermal and touchscreen profiles for optimum performance</string>
     <string name="thermal_default">Default</string>
     <string name="thermal_benchmark">Benchmark</string>
     <string name="thermal_browser">Browser</string>
