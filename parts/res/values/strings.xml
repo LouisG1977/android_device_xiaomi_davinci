@@ -84,6 +84,7 @@
     <string name="dc_dimming_on_auto_mode_auto">Will turn off automatically</string>
     <string name="dc_dimming_start_time">Start time</string>
     <string name="dc_dimming_end_time">End time</string>
+    <string name="dc_dimming_node">/sys/devices/platform/soc/soc:qcom,dsi-display/msm_fb_ea_enable</string>
 
     <!-- Kcal settings -->
     <string name="kcal_settings_title">Display colors</string>
