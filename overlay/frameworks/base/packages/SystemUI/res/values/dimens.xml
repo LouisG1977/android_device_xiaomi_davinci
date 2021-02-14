@@ -15,15 +15,5 @@
 */
 -->
 <resources>
-    <!-- the padding on the top of the statusbar (usually 0) -->
-    <dimen name="status_bar_padding_top">1dp</dimen>
-
-    <!-- Margin start of the system icons super container -->
-    <dimen name="system_icons_super_container_avatarless_margin_end">33px</dimen>
-
-    <!-- end margin for multi user switch in collapsed quick settings -->
-    <dimen name="multi_user_switch_keyguard_margin">22px</dimen>
-
-    <!-- Margin on the left side of the carrier text on Keyguard -->
-    <dimen name="keyguard_carrier_text_margin">44px</dimen>
+    <dimen name="rounded_corner_content_padding">10dp</dimen>
 </resources>
