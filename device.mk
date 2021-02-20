@@ -124,7 +124,8 @@ PRODUCT_PACKAGES += \
 
 # Device-specific settings
 PRODUCT_PACKAGES += \
-    XiaomiParts
+    XiaomiParts \
+    DavinciParts
 
 # Display
 PRODUCT_PACKAGES += \
@@ -208,7 +209,14 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/init.qcom.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.qcom.rc \
     $(LOCAL_PATH)/rootdir/etc/init.qcom.usb.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.qcom.usb.rc \
-    $(LOCAL_PATH)/rootdir/etc/init.target.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.target.rc
+    $(LOCAL_PATH)/rootdir/etc/init.target.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.target.rc \
+    $(LOCAL_PATH)/rootdir/etc/init.parallax.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.parallax.rc \
+    $(LOCAL_PATH)/rootdir/etc/init.parallax.sh:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.parallax.sh  \
+    $(LOCAL_PATH)/rootdir/etc/init.gpuboost.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.gpuboost.rc \
+    $(LOCAL_PATH)/rootdir/etc/init.gpuboost.sh:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.gpuboost.sh \
+    $(LOCAL_PATH)/rootdir/etc/init.cpuboost.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.cpuboost.rc \
+    $(LOCAL_PATH)/rootdir/etc/init.cpuboost.sh:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.cpuboost.sh \
+
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/bin/init.qcom.post_boot.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.qcom.post_boot.sh \

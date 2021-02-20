@@ -5,3 +5,34 @@ binder_call(system_app, hal_motor)
 allow system_app { motor_device vendor_sysfs_graphics sysfs_leds }:dir search;
 allow system_app { cgroup vendor_sysfs_graphics }:file rw_file_perms;
 allow system_app { motor_device vendor_sysfs_graphics hall_device }:chr_file rw_file_perms;
+
+# DavinciParts
+allow system_app sysfs_fcharge:file { open read getattr write };
+allow system_app sysfs_fastcharge:file { open read getattr write };
+
+# Fps Info
+allow system_app vendor_sysfs_graphics:file { getattr open read };
+
+allow system_app sysfs_msmthermal:file { open read getattr write };
+allow system_app sysfs_corecontrol:file { open read getattr write };
+allow system_app sysfs_vddrestrict:file { open read getattr write };
+allow system_app cpucore_prop:property_service set;
+get_prop(system_app, cpucore_prop);
+allow system_app lkm_prop:property_service set;
+get_prop(system_app, lkm_prop);
+allow system_app tcp_prop:property_service set;
+get_prop(system_app, tcp_prop);
+
+allow system_app sysfs_touchboost:file { open read getattr write };
+
+allow system_app gpuboost_prop:property_service set;
+get_prop(system_app, gpuboost_prop);
+
+allow system_app cpuboost_prop:property_service set;
+get_prop(system_app, cpuboost_prop);
+
+# Allow system_app to read and write to sysfs_vibrator
+allow system_app sysfs_vibrator:file rw_file_perms;
+
+# Allow system_app to read directories and attributes of sysfs_vibrator
+allow system_app sysfs_vibrator:dir r_dir_perms;

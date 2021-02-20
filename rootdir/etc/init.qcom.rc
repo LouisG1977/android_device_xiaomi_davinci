@@ -27,6 +27,10 @@
 
 import /vendor/etc/init/hw/init.qcom.usb.rc
 import /vendor/etc/init/hw/init.target.rc
+import /vendor/etc/init/hw/init.davinciparts.rc
+import /vendor/etc/init/hw/init.parallax.rc
+import /vendor/etc/init/hw/init.gpuboost.rc
+import /vendor/etc/init/hw/init.cpuboost.rc
 
 on early-init
     mount debugfs debugfs /sys/kernel/debug
@@ -297,3 +301,31 @@ service vendor.power_off_alarm /vendor/bin/power_off_alarm
     class core
     group system
     oneshot
+
+on boot
+
+    # Msm Thermal
+    chown system system /sys/module/msm_thermal/parameters/enabled
+    chmod 0660 /sys/module/msm_thermal/parameters/enabled
+    chown system system /sys/module/msm_thermal/core_control/enabled
+    chmod 0660 /sys/module/msm_thermal/core_control/enabled
+    chown system system /sys/module/msm_thermal/vdd_restriction/enabled
+    chmod 0660 /sys/module/msm_thermal/vdd_restriction/enabled
+
+# Touchboost
+    chown system system /sys/module/msm_performance/parameters/touchboost
+    chmod 0660 /sys/module/msm_performance/parameters/touchboost
+
+# Vibration
+    chown root system /sys/class/timed_output/vibrator/vtg_level
+    chmod 0660 /sys/class/timed_output/vibrator/vtg_level
+    chown system system /sys/class/timed_output/vibrator/vmax_mv
+    chmod 0660 /sys/class/timed_output/vibrator/vmax_mv
+
+    # Vibrator Permissions
+    chown system system /sys/devices/platform/soc/200f000.qcom,spmi/spmi-0/spmi0-03/200f000.qcom,spmi:qcom,pmi8950@3:qcom,haptics@c000/leds/vibrator/vmax_override
+    chmod 0660 /sys/devices/platform/soc/200f000.qcom,spmi/spmi-0/spmi0-03/200f000.qcom,spmi:qcom,pmi8950@3:qcom,haptics@c000/leds/vibrator/vmax_override
+    write /sys/devices/platform/soc/200f000.qcom,spmi/spmi-0/spmi0-03/200f000.qcom,spmi:qcom,pmi8950@3:qcom,haptics@c000/leds/vibrator/vmax_override 1
+    chown system system /sys/devices/platform/soc/200f000.qcom,spmi/spmi-0/spmi0-03/200f000.qcom,spmi:qcom,pmi8950@3:qcom,haptics@c000/leds/vibrator/vmax_mv_user
+    chown system system /sys/devices/platform/soc/200f000.qcom,spmi/spmi-0/spmi0-03/200f000.qcom,spmi:qcom,pmi8950@3:qcom,haptics@c000/leds/vibrator/vmax_mv_call
+    chown system system /sys/devices/platform/soc/200f000.qcom,spmi/spmi-0/spmi0-03/200f000.qcom,spmi:qcom,pmi8950@3:qcom,haptics@c000/leds/vibrator/vmax_mv_strong

@@ -10,6 +10,9 @@ camera.sensor.rearUltra.fuseID     u:object_r:vendor_camera_prop:s0
 camera.sensor.rearTele.fuseID      u:object_r:vendor_camera_prop:s0
 persist.camera.                    u:object_r:vendor_camera_prop:s0
 
+# Dirac
+persist.audio.dirac.                u:object_r:dirac_prop:s0
+
 # Fingerprint
 gf.debug.                          u:object_r:vendor_fp_prop:s0
 persist.vendor.sys.fp.             u:object_r:vendor_fp_prop:s0
@@ -26,3 +29,12 @@ ro.vendor.touchfeature.type        u:object_r:vendor_touchfeature_prop:s0
 
 # Xiaomi thermal daemon
 vendor.sys.thermal.                u:object_r:vendor_thermal_normal_prop:s0
+
+persist.cpucore.profile            u:object_r:cpucore_prop:s0
+persist.lkm.profile		   u:object_r:lkm_prop:s0
+
+# GPUboost
+persist.gpuboost.profile           u:object_r:gpuboost_prop:s0
+
+# CPUboost
+persist.cpuboost.profile           u:object_r:cpuboost_prop:s0
