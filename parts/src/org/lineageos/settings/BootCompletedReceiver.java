@@ -29,6 +29,7 @@ import org.lineageos.settings.popupcamera.PopupCameraUtils;
 import org.lineageos.settings.display.DcDimmingUtils;
 import org.lineageos.settings.thermal.ThermalUtils;
 import org.lineageos.settings.display.KcalUtils;
+import org.lineageos.settings.vibrator.VibratorSettings;
 
 public class BootCompletedReceiver extends BroadcastReceiver {
     private static final boolean DEBUG = false;
@@ -48,5 +49,7 @@ public class BootCompletedReceiver extends BroadcastReceiver {
 
         if (KcalUtils.isKcalSupported())
             KcalUtils.writeCurrentSettings(sharedPrefs);
+
+        VibratorSettings.restoreValue(context);
     }
 }
