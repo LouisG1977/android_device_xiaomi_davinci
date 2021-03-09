@@ -28,6 +28,9 @@ TARGET_USES_BLUR := true
 # Bootanimation
 TARGET_BOOT_ANIMATION_RES := 1080
 
+# Official
+CHERISH_BUILD_TYPE:= OFFICIAL
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := cherish_davinci
 PRODUCT_DEVICE := davinci
