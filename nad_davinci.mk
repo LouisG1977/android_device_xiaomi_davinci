@@ -24,6 +24,7 @@ $(call inherit-product, device/xiaomi/davinci/device.mk)
 # Inherit some common Nusantara stuff.
 $(call inherit-product, vendor/nusantara/config/common_full_phone.mk)
 TARGET_USES_BLUR := true
+TARGET_FOD_ANIMATIONS := true
 
 # Bootanimation
 TARGET_BOOT_ANIMATION_RES := 1080
