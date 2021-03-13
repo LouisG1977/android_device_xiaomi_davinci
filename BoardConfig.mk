@@ -21,6 +21,9 @@ BUILD_BROKEN_DUP_RULES := true
 # Inherit from proprietary files
 include vendor/xiaomi/davinci/BoardConfigVendor.mk
 
+# ANXCamera
+include vendor/aeonax/ANXCamera/BoardConfigAnx.mk
+
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
@@ -130,9 +133,6 @@ BOARD_MKBOOTIMG_ARGS := --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
 # Media
 TARGET_USES_ION := true
 TARGET_DISABLED_UBWC := true
-
-# MiuiCamera
-include vendor/miuicamera/common/BoardConfigVendor.mk
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 134217728
