@@ -23,6 +23,7 @@ $(call inherit-product, device/xiaomi/davinci/device.mk)
 
 # Inherit some common CherishOS stuff.
 $(call inherit-product, vendor/cherish/config/common_full_phone.mk)
+$(call inherit-product, vendor/oplauncher/OPLauncher.mk)
 TARGET_USES_BLUR := true
 
 # Bootanimation
