@@ -15,53 +15,107 @@
      limitations under the License.
 -->
 <resources>
+<string name="device_settings_app_name">Ajustes avanzados</string>
+
+    <!-- Ambient display settings -->
+    <string name="ambient_display_title">Pantalla ambiental</string>
+    <string name="ambient_display_enable_summary">Activar la pantalla cuando reciba notificaciones</string>
+
     <!-- Popup camera settings -->
-    <string name="popup_title">Efectos de la cámara frontal</string>
+    <string name="popup_title">Configuración de la cámara frontal</string>
     <string name="popup_led_title">LED de la cámara</string>
-    <string name="popup_led_summary">Habilita el LED cuando la cámara se muestra y cuando se retrae</string>
+    <string name="popup_led_summary">Habilite la luz LED mientras la cámara frontal aparece y se retrae</string>
     <string name="popup_sound_title">Efectos de sonido</string>
     <string name="popup_sound_muqin">Xilófono</string>
     <string name="popup_sound_yingyan">Condor</string>
-    <string name="popup_sound_mofa">Magia</string>
-    <string name="popup_sound_jijia">Mecánico</string>
-    <string name="popup_sound_chilun">Engranaje</string>
-    <string name="popup_sound_cangmen">Puerta de cabaña</string>
+    <string name="popup_sound_mofa">magia</string>
+    <string name="popup_sound_jijia">Mecha</string>
+    <string name="popup_sound_chilun">Rueda de engranaje</string>
+    <string name="popup_sound_cangmen">Puerta de la cabina</string>
+    <string name="popup_sound_imperial_march">Star Wars © Marcha Imperial</string>
+    <string name="popup_sound_lightsaber">Star Wars © Sable de luz</string>
+    <string name="popup_sound_throne_room">Sala del Trono de Star Wars ©</string>
+    <string name="popup_super_mario">Super Mario</string>
     <string name="popup_calibration_title">Calibración</string>
-    <string name="popup_calibration_summary">Calibrar el motor de la cámara fromtal</string>
+    <string name="popup_calibration_summary">Calibrar el motor de la cámara emergente</string>
     <string name="popup_calibration_warning_title">Calibración del motor</string>
-    <string name="popup_calibration_warning_text">Llevar a cabo una calibración innecesaria puede causar daños permanentes al motor. Solo se recomienda calibrar el motor en caso de que no se pueda mover correctamente o en caso de que esté en una posición incorrecta.</string>
-
-    <!-- DC dimming settings -->
-    <string name="dc_dimming_enable_title">Atenuación de CC</string>
-    <string name="dc_dimming_enable_summary">Reduce la fatiga visual en condiciones de poca luz</string>
-    <string name="dc_dimming_enable_summary_not_supported">La atenuación de CC no es soportada actualmente por el kernel</string>
+    <string name="popup_calibration_warning_text">El uso innecesario de la calibración puede causar daños permanentes. Se recomienda calibrar el motor de la cámara emergente solo en caso de que no se mueva correctamente o esté en una posición incorrecta.</string>
 
     <!-- Popup camera strings -->
     <string name="popup_camera_tip">Advertencia</string>
-    <string name="popup_camera_takeback_failed_calibrate">No se pudo cerrar la cámara frontal. Prueba a calibrar el motor.</string>
-    <string name="popup_camera_popup_failed_calibrate">No se pudo mostrar la cámara frontal. Prueba a calibrar el motor.</string>
-    <string name="popup_camera_calibrate_running">No se puede usar la cámara frontal durante la calibración.</string>
+    <string name="popup_camera_takeback_failed_calibrate">No se pudo cerrar la cámara frontal. Intente calibrar el motor.</string>
+    <string name="popup_camera_popup_failed_calibrate">No se pudo abrir la cámara frontal. Intente calibrar el motor.</string>
+    <string name="popup_camera_calibrate_running">La cámara frontal no se puede utilizar durante la calibración.</string>
     <string name="popup_camera_calibrate_now">Calibrar</string>
     <string name="popup_camera_calibrate_failed">No se pudo calibrar</string>
-    <string name="popup_camera_calibrate_success">La calibración se llevó a cabo con éxito. Ya puedes usar la cámara frontal.</string>
+    <string name="popup_camera_calibrate_success">Calibrado con éxito. Puede abrir la cámara frontal ahora.</string>
 
-    <!-- Thermal profiles -->
-    <string name="thermal_title">Perfiles de rendimiento</string>
-    <string name="thermal_summary">Ajusta el perfil de rendimiento de cada aplicación para un rendimiento optimo</string>
-    <string name="thermal_default">Prederetminado</string>
-    <string name="thermal_benchmark">Prueba de rendimiento</string>
+    <!-- DC dimming settings -->
+    <string name="dc_dimming_enable">Habilitar atenuación de CC</string>
+    <string name="dc_dimming_title">Atenuación DC</string>
+    <string name="dc_dimming_summary">Reduce la fatiga visual en condiciones de poca luz</string>
+    <string name="dc_dimming_summary_on">Activado</string>
+    <string name="dc_dimming_summary_off">Discapacitado</string>
+    <string name="dc_dimming_info">Reduce la fatiga visual en condiciones de poca luz, pero puede resultar en una calidad de imagen reducida y una producción de color deficiente.</string>
+    <string name="dc_dimming_auto_mode_title">Calendario</string>
+    <string name="dc_dimming_mode_never">Ninguno</string>
+    <string name="dc_dimming_mode_time">Enciende a la hora especificada</string>
+    <string name="dc_dimming_mode_brightness">Encienda cuando el brillo esté por debajo del umbral</string>
+    <string name="dc_dimming_mode_full">Depende del tiempo y el brillo</string>
+    <string name="dc_dimming_brightness_title">Umbral de brillo</string>
+    <string name="dc_dimming_brightness_info">Active la atenuación de CC solo cuando el brillo promedio esté por debajo del umbral</string>
+    <string name="dc_dimming_off_auto_mode_auto">Se encenderá automáticamente</string>
+    <string name="dc_dimming_on_auto_mode_auto">Se apagará automáticamente</string>
+    <string name="dc_dimming_start_time">Hora de inicio</string>
+    <string name="dc_dimming_end_time">Hora de finalización</string>
+    <string name="dc_dimming_node">/sys /devices /platform /soc /soc: qcom, dsi-display /msm_fb_ea_enable</string>
+
+    <!-- Thermal Profiles -->
+    <string name="thermal_title">Perfiles Térmicos</string>
+    <string name="thermal_summary">Ajuste los perfiles térmicos por aplicación para un rendimiento óptimo</string>
+    <string name="thermal_default">Defecto</string>
+    <string name="thermal_benchmark">Punto de referencia</string>
     <string name="thermal_browser">Navegador</string>
     <string name="thermal_camera">Cámara</string>
-    <string name="thermal_dialer">Llamadas</string>
-    <string name="thermal_gaming">Juegos</string>
+    <string name="thermal_dialer">Marcador</string>
+    <string name="thermal_gaming">Juego de azar</string>
     <string name="thermal_streaming">Transmisión</string>
 
     <!-- Kcal settings -->
-    <string name="kcal_settings_title">Ajustes del color</string>
-    <string name="kcal_settings_summary">Ajusta el color de la pantalla</string>
-    <string name="kcal_enable_title">Habilitar el ajuste del color de la pantalla</string>
-    <string name="kcal_enable_summary">Habilita el ajuste del color de la pantalla para una configuración personalizada</string>
-    <string name="red_slider_title">Rojo</string>
+    <string name="kcal_settings_title">Colores de pantalla</string>
+    <string name="kcal_settings_summary">Ajusta el color de tu pantalla</string>
+    <string name="kcal_enable_title">Habilitar la configuración del color de la pantalla</string>
+    <string name="kcal_enable_summary">Permite la configuración del color de la pantalla para un ajuste personalizado</string>
+    <string name="kcal_not_supported">La configuración de color de la pantalla no es compatible con el kernel</string>
+    <string name="red_slider_title">Red</string>
     <string name="green_slider_title">Verde</string>
-    <string name="blue_slider_title">Azul</string>
+    <string name="blue_slider_title">Azul</string>    
+    <string name="kcal_rgb_preference_category_title">RGB</string>
+    <string name="kcal_calibration_preference_category_title">Calibración de color</string>
+    <string name="saturation_slider_title">Saturación</string>
+    <string name="reset_default_button_title">Restablecer la configuración predeterminada</string>
+    <string name="reset_default_button_summary">Restablecer todas las configuraciones de esta pantalla</string>
+    <string name="contrast_slider_title">Contraste</string>
+    
+    <!-- Touch Control Settings -->
+    <string name="touch_control_title">Control tactil</string>
+    <string name="touch_game_mode_title">Habilitar el modo de juego</string>
+    <string name="touch_game_mode_summary">Aumenta la frecuencia de muestreo táctil a 180 Hz</string>
+    <string name="touch_response_title">Respuesta táctil</string>
+    <string name="touch_response_summary">Controla la respuesta táctil</string>
+    <string name="touch_sensitivity_title">Sensibilidad al tacto</string>
+    <string name="touch_sensitivity_summary">Controla la sensibilidad táctil para toques repetidos</string>
+    <string name="touch_resistant_title">Área resistente al tacto</string>
+    <string name="touch_resistant_summary">Reduzca la sensibilidad táctil cerca de los bordes para evitar activar los controles táctiles</string>
+
+    <!-- Vibration -->
+    <string name="vibration_control_title">Control de vibraciones</string>
+    <string name="vibration_control_summary">Ajustar la fuerza de la vibración</string>
+    <string name="vibration_reset">El valor predeterminado está establecido</string>
+    <string name="vibration_control_description">Defina la fuerza de la vibración para la retroalimentación háptica, la llamada entrante y la notificación entrante</string>
+
+    <!-- Clear Speaker -->
+    <string name="clear_speaker_title">Altavoz claro</string>
+    <string name="clear_speaker_summary">Reproduce un audio de 30 segundos para borrar el altavoz</string>
+    <string name="clear_speaker_description">Ejecute esta función una o dos veces si encuentra que su altavoz está ligeramente bloqueado por el polvo. Establezca el volumen de los medios al máximo. \N \nSi el altavoz está muy bloqueado, ejecute esta función de 2 a 5 veces mientras agita el dispositivo con el altavoz hacia abajo.</string>          
 </resources>
