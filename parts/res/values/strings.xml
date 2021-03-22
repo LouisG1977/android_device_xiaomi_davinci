@@ -23,10 +23,10 @@
     <string name="ambient_display_enable_summary">Wake screen when you receive notifications</string>
 
     <!-- Popup camera settings -->
-    <string name="popup_title">Front camera settings</string>
+    <string name="popup_title">Popup camera settings</string>
+    <string name="popup_sound_title">Popup sound effect</string>
     <string name="popup_led_title">Camera LED</string>
     <string name="popup_led_summary">Enable LED light while the front camera appears and retracts</string>
-    <string name="popup_sound_title">Sound effects</string>
     <string name="popup_sound_muqin">Xylophone</string>
     <string name="popup_sound_yingyan">Condor</string>
     <string name="popup_sound_mofa">Magic</string>
