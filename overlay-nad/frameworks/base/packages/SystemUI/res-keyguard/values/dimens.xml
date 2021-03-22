@@ -17,4 +17,7 @@
 <resources>
     <!-- The minimum bottom margin of the keyguard security container -->
     <dimen name="kg_security_container_min_bottom_margin">505px</dimen>
+
+        <!-- FOD recognizing animation vertical position offset -->
+    <dimen name="fod_animation_offset">3dp</dimen>
 </resources>
