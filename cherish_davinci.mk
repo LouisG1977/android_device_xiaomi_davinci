@@ -36,6 +36,10 @@ CHERISH_BUILD_TYPE:= OFFICIAL
 PRODUCT_GENERIC_PROPERTIES += \
     ro.cherish.maintainer=🔥Louis1977🔥
 
+# FOD animations
+EXTRA_FOD_ANIMATIONS := true
+TARGET_WANTS_FOD_ANIMATIONS := true
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := cherish_davinci
 PRODUCT_DEVICE := davinci
